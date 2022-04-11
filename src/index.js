@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ToDoListApp from './ToDoList-App';
-import CoinTrackerApp from './CoinTracker-App';
-
+import App from './App';
 ReactDOM.render(
-    <CoinTrackerApp/>,
+  <App />,
   document.getElementById('root')
 );
 
