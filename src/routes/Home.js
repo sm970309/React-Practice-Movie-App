@@ -17,10 +17,11 @@ function Home(){
 
     }, [])
     return (
-        <div className="App">
+        <div className="Home">
             {loading ? <h1>Loading...</h1> : movies.map((movie) => (
                 <Movie
                     key={movie.id}
+                    id = {movie.id}
                     coverImg={movie.medium_cover_image}
                     title={movie.title}
                     summary={movie.summary}
