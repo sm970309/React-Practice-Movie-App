@@ -1,11 +1,11 @@
 import Home from './routes/Home'
 import React from "react";
 import Detail from './routes/Detail';
+import "./styles.css";
 import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
 } from "react-router-dom";
 
 function App() {
