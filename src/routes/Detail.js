@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import styles from "./Detail.module.css";
 
 function Detail() {
     const { id } = useParams();
@@ -18,8 +19,8 @@ function Detail() {
 
 
     return (
-        <div>
-            {loading ? <h1>Loading...</h1> :
+        <div className={styles.container}>
+            {loading ? <h1 className={styles.loader}>Loading...</h1> :
                 <div>
                     <h1>
                         {movie.title}({movie.year})
@@ -32,13 +33,15 @@ function Detail() {
                         <strong>Rating: {movie.rating}</strong>
                     </p>
                     <p>{movie.description_full}</p>
+                    <button>
+                        <Link to={'/'} style={{ textDecoration: 'none' ,color:'white'}}>Go Back</Link>
+                    </button>
 
                 </div>
+
             }
-            <button>
-                <Link to={'/'}>Go Back</Link>
-            </button>
-            
+
+
 
         </div>
     )
