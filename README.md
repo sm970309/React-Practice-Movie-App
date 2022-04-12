@@ -6,9 +6,9 @@
 [nomadcoders](https://github.com/nomadcoders/react-for-beginners)
 
 ### `How to publish`
-. npm i gh-pages 설치
-. package.json에 "homepage": "https://username.github.io/directory" 추가
-. scripts에 "deploy":"gh-pages -d build" , "predeploy":"npm run build" 추가
+1.npm i gh-pages 설치
+1.package.json에 "homepage": "https://username.github.io/directory" 추가
+1.scripts에 "deploy":"gh-pages -d build" , "predeploy":"npm run build" 추가
 
 ### `Published Page`
 [Click Here](https://sm970309.github.io/React-Practice-Movie-App/)
